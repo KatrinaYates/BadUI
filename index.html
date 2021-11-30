@@ -20,7 +20,8 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#bad">Bad Design</a>
                 <a class="nav-link" href="#good">Good Design</a>
-                <a class="nav-link" href="#">View Code</a>
+                <a class="nav-link" target="_blank" href="https://katrinayates.github.io/BadUI/">View Code</a>
+                <a class="nav-link" target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatrinayates.github.io%2FBadUI%2F">Code Validation</a>
             </div>
         </div>
     </nav>
@@ -31,7 +32,7 @@
         <section>
             <h1>User Experience</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ea facere! Aliquid velit nam, quis hic ipsa magnam? Perspiciatis assumenda mollitia commodi, dignissimos voluptatum laboriosam voluptatibus natus culpa optio dolorem!
+                The user experience aspect of any design is one of the most important things to consider when designing. A bad UX can cause a user to get frustrated quickly and give up on using the interface. This can cause loss of users, loss of sales, and ruin a business. For this project, we will look at an example of a bad UX and how we can fix it!
             </p>
     
     
@@ -59,7 +60,7 @@
         <section id="bad">
             <h1>Bad Design</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ea facere! Aliquid velit nam, quis hic ipsa magnam? Perspiciatis assumenda mollitia commodi, dignissimos voluptatum laboriosam voluptatibus natus culpa optio dolorem!
+                Here we have an example from <a href="http://diamondbackfirearms.com" target="_blank">Diamond Back Firearms</a>. As you can see in the video, the items are way too big and it takes a whole 20 seconds just to scroll through the pictures. Imagine how long it would take to compare each item!
             </p>
             <video width="800" controls>
                 <source src="img/bad.mov" type="video/mp4">
@@ -71,50 +72,73 @@
         <section id="good">
             <h1>Good Design</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ea facere! Aliquid velit nam, quis hic ipsa magnam? Perspiciatis assumenda mollitia commodi, dignissimos voluptatum laboriosam voluptatibus natus culpa optio dolorem!            
+                To make it a better design, I shrunk the cards and created a flex box. This is a responsive design that will allow us to look through all the products at once. 
             </p>
-            <div id="improvedSite" class="d-flex flex-row bd-highlight mb-3 justify-content-around flex-wrap">
-                <div class="card">
-                    <img src="img/1.jpg" class="card-img-top improvedImg" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Good UX</h3>
+            <div id="improvedSite" class="bd-highlight mb-3 pt-3">
+                <h2>DB-15</h2>
+                <div id="flexSection" class="d-flex flex-row pt-4 justify-content-around flex-wrap">
+                    <div class="card">
+                        <img src="img/1.jpg" class="card-img-top improvedImg" alt="...">
+                        <div class="card-body">
+                        <h3 class="card-title">Diamond</h3>
+                        <p>$449.99</p>
+                        <button class="addCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/2.jpg" class="card-img-top improvedImg" alt="...">
+                        <div class="card-body">
+                        <h3 class="card-title">Black Gold</h3>
+                        <p>$499.99</p>
+                        <button class="addCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/3.jpg" class="card-img-top improvedImg" alt="...">
+                        <div class="card-body">
+                        <h3 class="card-title">Gold Anti-Slip</h3>
+                        <p>$549.99</p>
+                        <button class="addCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/4.jpg" class="card-img-top improvedImg" alt="...">
+                        <div class="card-body">
+                        <h3 class="card-title">Gold M-Lok</h3>
+                        <p>$599.99</p>
+                        <button class="addCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/5.jpg" class="card-img-top improvedImg" alt="...">
+                        <div class="card-body">
+                        <h3 class="card-title">Diamond Pistol</h3>
+                        <p>$99.99</p>
+                        <button class="addCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/6.jpg" class="card-img-top improvedImg" alt="...">
+                        <div class="card-body">
+                        <h3 class="card-title">Stripped Carbon</h3>
+                        <p>$149.99</p>
+                        <button class="addCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/7.jpg" class="card-img-top improvedImg" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Billet Upper Bundle</h3>
+                            <p>$199.99</p>
+                            <button class="addCart">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/2.jpg" class="card-img-top improvedImg" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Good UX</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/3.jpg" class="card-img-top improvedImg" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Good UX</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/4.jpg" class="card-img-top improvedImg" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Good UX</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/5.jpg" class="card-img-top improvedImg" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Good UX</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/6.jpg" class="card-img-top improvedImg" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Good UX</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/7.jpg" class="card-img-top improvedImg" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Good UX</h3>
-                    </div>
+
+                <div id="cartBox" class="mt-5">
+                    <p>Try clicking an "Add to Cart" button!</p>
+                    <h2>Cart</h2>
+                    <p id="cartText"></p>
                 </div>
             </div>
         </section>
